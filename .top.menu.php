@@ -23,28 +23,28 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Pages", 
-		"#",
+		"#", 
 		Array(), 
-		Array("FROM_IBLOCK" => "0", "IS_PARENT" => "1", "DEPTH_LEVEL" => "1"),
+		Array("FROM_IBLOCK"=>"0", "IS_PARENT"=>"1", "DEPTH_LEVEL"=>"1"), 
 		"" 
 	),
 	Array(
 		"Left Sidebar", 
-		"/postleftsidebar",
+		"/postleftsidebar", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Right Sidebar", 
-		"/postrightsidebar",
+		"/postrightsidebar", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Centered Post", 
-		"/postcentered",
+		"/postcentered", 
 		Array(), 
 		Array(), 
 		"" 

@@ -1,8 +1,9 @@
 <section class="masonry">
     <div class="grid-sizer"></div>
+
     <div class="gutter-sizer"></div>
     <? foreach ($arResult['ITEMS'] as $item) : ?>
-        <div class="item <?= lcfirst($item['PROPERTIES']['category']['VALUE']) ?>" data-category="<?= lcfirst($item['PROPERTIES']['category']['VALUE']) ?>">
+        <div id="<?= $this->GetEditAreaId($item['ID']); ?>" class="item <?= lcfirst($item['PROPERTIES']['category']['value']) ?>" data-category="<?= lcfirst($item['PROPERTIES']['category']['value']) ?>">
             <article class="post">
                 <figure class="figure <?= $item['PROPERTIES']['formImage']['VALUE'] ?>">
                     <div class="img-trigger">
@@ -14,7 +15,7 @@
                     <h4 class="post-title">
                         <a href="/<?= $item['PROPERTIES']['link']['VALUE'] ?>"><?= $item['PROPERTIES']['title']['VALUE'] ?></a>
                     </h4>
-                    <h6 class="category"><?= ucfirst($item['PROPERTIES']['category']['VALUE']) ?></h6>
+                    <h6 class="category"><?= ucfirst($item['PROPERTIES']['category']['value']) ?></h6>
                     <p><?= $item['PROPERTIES']['about']['VALUE'] ?></p>
                     <span class="meta comments">6 COMMENTS</span>
                 </section>
@@ -22,3 +23,4 @@
         </div>
     <? endforeach;?>
 </section>
+
